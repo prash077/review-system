@@ -1,0 +1,23 @@
+# Python
+*.pyc
+*.pyo
+__pycache__/
+
+# Virtual Environment
+myenv/
+
+# Django
+db.sqlite3
+*.log
+
+# Machine Learning Models
+*.pkl
+
+# IDE/Editor Files
+.vscode/
+.idea/
+*.swp
+
+# OS Files
+.DS_Store
+Thumbs.db
