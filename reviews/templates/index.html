@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Customer Reviews</title>
+</head>
+<body>
+    <h1>Submit a Review</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Submit</button>
+    </form>
+
+    <h2>Past Reviews</h2>
+    <ul>
+        {% for review in reviews %}
+            <li>{{ review.text }} - <strong>{{ review.sentiment }}</strong></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
