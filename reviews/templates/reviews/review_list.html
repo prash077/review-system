@@ -1,0 +1,11 @@
+{% extends 'reviews/base.html' %}
+
+{% block content %}
+<h2>All Reviews</h2>
+<ul>
+    {% for review in reviews %}
+    <li>{{ review.text }} - <strong>{{ review.sentiment }}</strong></li>
+    {% endfor %}
+</ul>
+<a href="/">Submit a new review</a>
+{% endblock %}
